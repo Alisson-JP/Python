@@ -15,7 +15,7 @@ import pandas as pd
   # criar uma variável para receber as infos da pasta destino
   # variável [ lista_arquivo ] será criada
 
-lista_arquivo = os.listdir("/content/drive/MyDrive/Python/Vendas")
+lista_arquivo = os.listdir("https://github.com/Alisson-JP/Python/tree/main/Arquivos/Vendas")
 
 # criar uma tabela (planilha) para receber os dados de todas as demais planilhas
 # tabela no python é chama [ DataFrame ]
@@ -39,7 +39,7 @@ for arquivo in lista_arquivo:
   # importar o arquivo
   # selecionar o tipo de arquivo para o panda (pd) ler
   # colocar essa leitura numa variável
-    tabela = pd.read_csv(f"/content/drive/MyDrive/Python/Vendas/{arquivo}")
+    tabela = pd.read_csv(f"https://github.com/Alisson-JP/Python/tree/main/Arquivos/Vendas/{arquivo}")
     # adicionar cada planilha individualmente à tabela total
     tabela_total = tabela_total.append(tabela)
 
